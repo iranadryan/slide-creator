@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyric Slide Creator</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head> 
+
+<body>
+  <div class="app">
+    <h1>Lyric Slide Creator</h1>
+    <div class="form">
+      <input id="title" type="text" placeholder="Título da música" name="title">
+      <div class="tone">
+        <input id="singer" type="text" placeholder="Quem canta" name = "singer">
+        <input id="tone" type="text" placeholder="Tom" name="tone">
+      </div>
+      <textarea id="lyrics" placeholder="Letra da música" name="lyrics"></textarea>
+      <button onclick="handleCreateSlide()">Criar slide</button>
+      <a href="http://" target="_blank" rel="noopener noreferrer" download>Baixar slide</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

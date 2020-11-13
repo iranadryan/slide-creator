@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background: url(./assets/bg.png);
+  background-size: 80px;
+  height: 100vh;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input, textarea, button, a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+}
+
+.app {
+  width: 100%;
+  max-width: 400px;
+}
+
+.app h1, .app .form input, .app .form textarea, .app .form button, .app .form a {
+  background: #FFF;
+  border: 2px solid #111;
+  box-shadow: 5px 5px 0px #111;
+}
+
+.app h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 14px; 
+  padding: 10px;
+}
+
+.app .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.app .form .tone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app .form .tone #singer {
+  width: 75%;
+}
+
+.app .form .tone #tone {
+  width: 23%;
+}
+
+.app .form input {
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+.app .form textarea {
+  height: 240px;
+  padding: 10px;
+  margin-bottom: 14px;
+  resize: none;
+}
+
+.app .form button {
+  background: #FFF;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all ease-in-out 100ms;
+}
+
+.app .form button:hover, .app .form a:hover {
+  background: #eee;
+}
+
+.app .form button:active, .app .form a:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+.app .form a {
+  display: none;
+  height: 40px;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: all ease-in-out 100ms;
+}
